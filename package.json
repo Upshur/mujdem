@@ -4,9 +4,9 @@
   "//3": "updating this file will download and update your packages",
   "version": "0.0.1",
   "description": "A simple Node app built on Express, instantly up and running.",
-  "main": "bot.js",
+  "main": "ottomancode.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node ottomancode.js"
   },
   "dependencies": {
     "advanced-tools": "^1.0.5",
@@ -48,7 +48,7 @@
     "qrcode": "^1.3.3",
     "quick.db": "^7.0.0-b22",
     "random-puppy": "^1.1.0",
-    "simple-youtube-api": "^5.2.0",
+    "simple-youtube-api": "^5.2.1",
     "speedtest-net": "^1.5.1",
     "steam-provider": "^0.3.2",
     "superagent": "^5.1.0",
@@ -59,8 +59,9 @@
     "weather-js": "^2.0.0",
     "xmlhttprequest": "^1.8.0",
     "youtube-info": "^1.3.2",
-    "ytdl-core": "^0.29.2",
-    "ffmpeg": "^0.0.4"
+    "ytdl-core": "^4.1.3",
+    "ffmpeg": "^0.0.4",
+    "node-opus": "^0.3.3"
   },
   "engines": {
     "node": "8.x"

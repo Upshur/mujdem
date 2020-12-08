@@ -35,6 +35,7 @@ dependencies:
   moment: 2.24.0
   moment-duration-format: 2.3.2
   node-google-translate-skidz: 1.1.2
+  node-opus: 0.3.3
   node-superfetch: 0.1.9
   qrcode: 1.4.2
   quick.db: 7.0.0-b22
@@ -50,7 +51,7 @@ dependencies:
   weather-js: 2.0.0
   xmlhttprequest: 1.8.0
   youtube-info: 1.3.2
-  ytdl-core: 0.29.7
+  ytdl-core: 4.1.4
 packages:
   /@jimp/bmp/0.6.8/@jimp!custom@0.6.8:
     dependencies:
@@ -606,6 +607,17 @@ packages:
     dev: false
     resolution:
       integrity: sha1-9618iSi+d6tGekoCm6YxdQKjiOU=
+  /bindings/1.2.1:
+    dev: false
+    resolution:
+      integrity: sha1-FK1hE4EtLTfXLme0ystLtyZQXxE=
+  /bindings/1.5.0:
+    dependencies:
+      file-uri-to-path: 1.0.0
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==
   /bl/1.2.2:
     dependencies:
       readable-stream: 2.3.6
@@ -859,6 +871,10 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==
+  /commander/2.20.3:
+    dev: false
+    resolution:
+      integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
   /commander/2.8.1:
     dependencies:
       graceful-readlink: 1.0.1
@@ -1559,6 +1575,11 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-Qe/5NJrgIOlwijpq3B7BEpzPFcgzggOTagZmkXQY4LA6bsXKTUstK7Wp12lEJ/mLKTpvIZxmIuRcLYWT6ov9lw==
+  /file-uri-to-path/1.0.0:
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==
   /finalhandler/1.1.2:
     dependencies:
       debug: 2.6.9
@@ -1900,12 +1921,10 @@ packages:
       node: '>=0.10.40'
     resolution:
       integrity: sha1-ILt0A9POo5jpHcRxCo/xuCdKJe0=
-  /html-entities/1.2.1:
+  /html-entities/1.3.1:
     dev: false
-    engines:
-      '0': node >= 0.4.0
     resolution:
-      integrity: sha1-DfKTUfByEWNRXfueVUPl9u7VFi8=
+      integrity: sha512-rhE/4Z3hIhzHAUKbW8jVcCyuT5oJCXXqhN/6mXXVCpzTmvJnoH2HL/bt3EZ6p55jbFJBeAe1ZNpL5BugLujxNA==
   /htmlparser2/3.10.1:
     dependencies:
       domelementtype: 1.3.1
@@ -2165,10 +2184,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-mICNrBUqckdJfF0GgwgBLsz6Q1E=
-  /iso8601-duration/1.2.0:
+  /iso8601-duration/1.3.0:
     dev: false
     resolution:
-      integrity: sha512-ErTBd++b17E8nmWII1K1uZtBgD1E8RjyvwmxlCjPHNqHMD7gmcMHOw0E8Ro/6+QT4PhHRSnnMo7bxa1vFPkwhg==
+      integrity: sha512-K4CiUBzo3YeWk76FuET/dQPH03WE04R94feo5TSKQCXpoXQt9E4yx2CnY737QZnSAI3PI4WlKo/zfqizGx52QQ==
   /isstream/0.1.2:
     dev: false
     resolution:
@@ -2398,15 +2417,15 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-X/2yK+b4aDKZ217m3LJF3fKfzl8X9duDmGyLq1pm/Q+/P8e4pJzmMaP+Z+sRLwtLaUsyvSzvdzk1EAP23cWvvQ==
-  /m3u8stream/0.6.2:
+  /m3u8stream/0.8.3:
     dependencies:
-      miniget: 1.6.0
+      miniget: 4.1.0
       sax: 1.2.4
     dev: false
     engines:
-      node: '>=6'
+      node: '>=10'
     resolution:
-      integrity: sha512-WsuM2bd5pPN80xvfrB+1DZqr4M7+kJl8byi6+ZCy6cmVjEiHhmr/desN53Ngsa6Hs13kYumeVgT4wL0oIJ+v6g==
+      integrity: sha512-0nAcdrF8YJKUkb6PzWdvGftTPyCVWgoiot1AkNVbPKTeIGsWs6DrOjifrJ0Zi8WQfQmD2SuVCjkYIOip12igng==
   /make-dir/1.3.0:
     dependencies:
       pify: 3.0.0
@@ -2484,12 +2503,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-e9KC4/WELtKVu3SM3Z8f+iyCRoU=
-  /miniget/1.6.0:
+  /miniget/4.1.0:
     dev: false
     engines:
-      node: '>=6'
+      node: '>=10'
     resolution:
-      integrity: sha512-CELIsH/oJfnDHixh7j//7H7PyQYkoMxgaTtzdoD08PYjyLW0YuYqxeIZGjLx59WF2/eapCLkQE4N5ppj82DW+A==
+      integrity: sha512-kzhrNv5L7LlomwGmPGQsLQ2PnT1LeJJWfB0wNFGyv426gEM1gsfziBQmfkr6XOBA8EusZg9nowlNT5CbuKTjZg==
   /minimatch/3.0.4:
     dependencies:
       brace-expansion: 1.1.11
@@ -2569,6 +2588,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-INOFj37C7k3AfaNTtX8RhsTw7qRy7eLET14cROi9+5HAVbbHuIWUHEauBv5qT4Av2tWasiTY1Jw6puUNqRJXQg==
+  /nan/2.14.2:
+    dev: false
+    resolution:
+      integrity: sha512-M2ufzIiINKCuDfBSAUr1vWQ+vuVcA9kqx8JJUsbQi6yf1uGRyb7HfpdfUr5qLXf3B/t8dPvcjhKMmlfnP47EzQ==
   /needle/2.4.0:
     dependencies:
       debug: 3.2.6
@@ -2599,6 +2622,12 @@ packages:
       node: 4.x || >=6.0.0
     resolution:
       integrity: sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
+  /node-fetch/2.6.1:
+    dev: false
+    engines:
+      node: 4.x || >=6.0.0
+    resolution:
+      integrity: sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
   /node-google-translate-skidz/1.1.2:
     dependencies:
       lodash: 4.17.15
@@ -2607,6 +2636,31 @@ packages:
     dev: false
     resolution:
       integrity: sha512-ptzaTx/eB4unclyKBy9ixPrUkhgkMwHm/BxqdKoainssqNPIKzAJZo073oV7QPa0rBal+pzXBPvC0K6zYr8vHg==
+  /node-opus/0.3.3:
+    cpu:
+      - x64
+      - arm
+      - arm64
+      - ia32
+    dependencies:
+      bindings: 1.2.1
+      commander: 2.20.3
+      nan: 2.14.2
+    deprecated: This project is unmaintained. See @discordjs/opus for an alternative.
+    dev: false
+    engines:
+      node: '>=5.10.0'
+    optionalDependencies:
+      ogg-packet: 1.0.1
+    os:
+      - linux
+      - darwin
+      - win32
+      - freebsd
+      - android
+    requiresBuild: true
+    resolution:
+      integrity: sha512-ZQniA8iJ6y/qOTmW6eyzM9m8odt4CIGV0NM9/U03/pYLhGyxy18QXO25WfrWd8XsUYx57tnxll2xxj54CN08uQ==
   /node-pre-gyp/0.11.0:
     dependencies:
       detect-libc: 1.0.3
@@ -2716,6 +2770,13 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha1-h1jIRvW0B62rDyNuCYbxSwUcqhY=
+  /ogg-packet/1.0.1:
+    dependencies:
+      ref-struct: 1.1.0
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-dW1ok3BMnMikyXGDIgVEckWnlViW8JLWQV4qj9aN/rNRVqHlDYSlcIEtSIMH7tpuUOiIxAhY3+OxNdIOm6s17A==
   /omdb-api/0.1.0:
     dependencies:
       bluebird: 2.11.0
@@ -3095,6 +3156,24 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-jItXPLmrSR8jmTRmRWJXCnGJsfy85mB3Wd/uINMXA65yrnFo0cPClFIUWzo2najVNSl+mx7/4W8ttlLWJe99pQ==
+  /ref-struct/1.1.0:
+    dependencies:
+      debug: 2.6.9
+      ref: 1.3.5
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha1-XV7mWtQc78Olxf60BYcmHkee3BM=
+  /ref/1.3.5:
+    dependencies:
+      bindings: 1.5.0
+      debug: 2.6.9
+      nan: 2.14.2
+    dev: false
+    optional: true
+    requiresBuild: true
+    resolution:
+      integrity: sha512-2cBCniTtxcGUjDpvFfVpw323a83/0RLSGJJY5l5lcomZWhYpU2cuLdsvYqMixvsdLJ9+sTdzEkju8J8ZHDM2nA==
   /regenerator-runtime/0.13.3:
     dev: false
     resolution:
@@ -3331,8 +3410,8 @@ packages:
       integrity: sha512-bCR6cP+aTdScaQCnQKbPKtJOKDp/hj9EDLJo3Nw4y1QksqaovlW/bnptB6/c1e+qmNIDHRK+oXFDdEqBT8WzUA==
   /simple-youtube-api/5.2.1:
     dependencies:
-      iso8601-duration: 1.2.0
-      node-fetch: 2.6.0
+      iso8601-duration: 1.3.0
+      node-fetch: 2.6.1
     dev: false
     resolution:
       integrity: sha512-vmndP9Bkh35tifn2OwY+th2imSsfYtmDqczgdOW5yEARFzvSoR8VSQFsivJnctfV5QHQUL6VrOpNdbmDRLh9Bg==
@@ -4015,17 +4094,17 @@ packages:
     dev: false
     resolution:
       integrity: sha512-LnBZxCuCof0bwFNtLSxklLYgaU1XR8OK+cGieWyPS10rn3P0TMHdIikRpO/W/duE9SR9JfzOk8ThgwDgx0B3Vw==
-  /ytdl-core/0.29.7:
+  /ytdl-core/4.1.4:
     dependencies:
-      html-entities: 1.2.1
-      m3u8stream: 0.6.2
-      miniget: 1.6.0
+      html-entities: 1.3.1
+      m3u8stream: 0.8.3
+      miniget: 4.1.0
       sax: 1.2.4
     dev: false
     engines:
-      node: '>=6'
+      node: '>=10'
     resolution:
-      integrity: sha512-mqPuZ1UyspT84lyV1FSU1UAoiQ4H5j52ba3sC1LC43OmL8qNaDIRCGffGlpiakQrc69qsplNWsWEZUF+J5bhJA==
+      integrity: sha512-f9M2ctrQNH9/X+jOZ/4iA4h6DvNcyuJ+fDvacheeaxtV7sX13qaNmQgNAe7UeTlJWh7Dn3RHQ6imqJJh5beGQg==
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
@@ -4066,11 +4145,12 @@ specifiers:
   moment: ^2.24.0
   moment-duration-format: ^2.2.2
   node-google-translate-skidz: ^1.1.2
+  node-opus: ^0.3.3
   node-superfetch: ^0.1.9
   qrcode: ^1.3.3
   quick.db: ^7.0.0-b22
   random-puppy: ^1.1.0
-  simple-youtube-api: ^5.2.0
+  simple-youtube-api: ^5.2.1
   speedtest-net: ^1.5.1
   steam-provider: ^0.3.2
   superagent: ^5.1.0
@@ -4081,4 +4161,4 @@ specifiers:
   weather-js: ^2.0.0
   xmlhttprequest: ^1.8.0
   youtube-info: ^1.3.2
-  ytdl-core: ^0.29.2
+  ytdl-core: ^4.1.3
