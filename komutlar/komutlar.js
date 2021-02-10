@@ -19,10 +19,9 @@ module.exports.run = async (client, message, args) => {
 <a:emoji_18:809066178588311573><a:emoji_18:809066178588311573><a:emoji_18:809066178588311573><a:emoji_18:809066178588311573><a:emoji_18:809066178588311573><a:emoji_18:809066178588311573><a:emoji_18:809066178588311573>
 <a:emoji_13:807058166965731328>么+devam么<a:emoji_13:807058166965731328>`
     
-      
-      
-      
-      
+ `Project by buğra` 
+
+     
     
       
       
@@ -35,8 +34,8 @@ module.exports.run = async (client, message, args) => {
       
       
       
+ 
        
-      
       
       
       
