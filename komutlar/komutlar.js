@@ -11,6 +11,32 @@ module.exports.run = async (client, message, args) => {
 <a:emoji_13:807058166965731328>+çalan<a:emoji_13:807058166965731328>
 <a:emoji_13:807058166965731328>+sıra<a:emoji_13:807058166965731328>
 <a:emoji_13:807058166965731328>+devam<a:emoji_13:807058166965731328>`
+      
+const Discord = require('discord.js');
+
+exports.run = (client, message, args) => {
+
+  let ottoman = message.mentions.users.first() 
+  
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
        
       
       
