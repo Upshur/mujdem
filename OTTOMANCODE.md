@@ -1,1 +1,0 @@
-OttomaN & Destek & Botlist & Code Müzik Altyapısı
