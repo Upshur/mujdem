@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 //OTTOMAN CODE
 exports.run = (client, message, args) => {
-  if (message.author.id !== "ID NİZİ GİRİN") return message.reply(':warning: bu komutu sadece sahibim kullanabilir!');
+  if (message.author.id !== "762370954592124945") return message.reply(':warning: bu komutu sadece sahibim kullanabilir!');
    message.channel.send('sunucudan ayrıldım');
    message.guild.leave()
 };

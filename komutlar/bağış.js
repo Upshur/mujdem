@@ -5,7 +5,7 @@ exports.run = async (client, message, params, args) => {
   const ottomanCODE = new Discord.RichEmbed()
   .setColor(0xffff00)
       .setAuthor(`bağış`)
-.addField(`**Bağış at**`, '**Alttaki barkod ile bize bağış yaparak destek olabilirsiniz:\n\nBARKOD: `barkodunuz/ ibanınız`**')      
+.addField(`**Bağış at**`, '**Alttaki barkod ile bize bağış yaparak destek olabilirsiniz:\n\nBARKOD: `inninal / 4003560002459`**')      
   return message.channel.sendEmbed(ottomanCODE);
 };
 //OTTOMAN CODE  
