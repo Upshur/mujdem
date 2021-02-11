@@ -4,8 +4,8 @@ exports.run = (client, message) => {
 const ottoman = message.mentions.users.first() || message.author
 const ottomancode = new Discord.RichEmbed()
 .setImage(ottoman.avatarURL)
-.setFooter('OttomaN Code - Avatar Kodu')
-.setColor('Random)
+.setFooter('EVOLVE - Avatar Kodu')
+.setColor('Random')
 message.channel.send(ottomancode)
 }
 //OTTOMAN CODE
