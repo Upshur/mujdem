@@ -9,6 +9,9 @@ exports.run = (client, message) => {
 <a:emoji_13:807058166965731328>么+çal么\n<a:emoji_13:807058166965731328>么+devam么\n<a:emoji_13:807058166965731328>么+durdur么\n<a:emoji_13:807058166965731328>么+geç么\n<a:emoji_13:807058166965731328>么+duraklat么\n<a:emoji_13:807058166965731328>么+sıra么\n<a:emoji_13:807058166965731328>么+ses么\n<a:emoji_13:807058166965731328>么+avatar么\n<a:emoji_13:807058166965731328>么+istatistik么
 
 <a:emoji_13:807058166965731328>botumuzu davet etmek için +istatistik yazın`)
+ 
+.setImage('https://discord.com/channels/768582939020754954/772216876365250610/809505434268467231')
+ 
   message.channel.send(OTTOMANcode)
 }
 exports.conf = {
