@@ -7,7 +7,7 @@ exports.run = async (bot, message, args) => {
    const istatistikler = new Discord.RichEmbed()
   .setColor('RANDOM')
   .setFooter('EVOLVE BOT\'Buyur benim istatistiklerim', bot.user.avatarURL)
-  .addField("» **Botun Sahibi**", "<@762370954592124945>| ")
+  .addField("» **Botun Sahibi**", "<@762370954592124945>| 么𝐄𝐕𝐎𝐋𝐕𝐄么#1276 ")
   .addField("»  **Geliştirici** ","<@762370954592124945>")
   .addField("» **Bellek kullanımı**", (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + ' MB', true)  
   .addField("» **Çalışma süresi**", seksizaman)
