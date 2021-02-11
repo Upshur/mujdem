@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 exports.run = (client, message) => {
   const OTTOMANcode = new Discord.RichEmbed()
-    .setImage('https://hizliresim.com/fIpiZd') 
+    .setImage('https://cdn.discordapp.com/attachments/772216876365250610/809511075585851392/standard.gif') 
     .setColor("#FFFF00")
     .setDescription(`<a:emoji_13:807058166965731328>么𝐄𝐕𝐎𝐋𝐕𝐄-𝐘𝐀𝐑𝐃𝐈𝐌么<a:emoji_13:807058166965731328>
 
