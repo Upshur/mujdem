@@ -3,9 +3,9 @@ const Discord = require('discord.js');
 exports.run = (client, message) => {
   
   const OTTOMANcode = new Discord.RichEmbed()
-  .setImage('
   .setColor('#FFFF00')
-  .setDescription(`+çal\n+devam\n+durdur\n+geç\n+duraklat\n+sıra\n+ses\n+avatar\n+istatistik`)
+  .setDescription(`<a:emoji_13:807058166965731328>EVOLVE-YARDIM<a:emoji_13:807058166965731328>
+  <a:emoji_13:807058166965731328>么+çal么\n<a:emoji_13:807058166965731328>么+devam么\n<a:emoji_13:807058166965731328>么+durdur么\n<a:emoji_13:807058166965731328>么+geç么\n<a:emoji_13:807058166965731328>么+duraklat么\n<a:emoji_13:807058166965731328>么+sıra么\n<a:emoji_13:807058166965731328>么+ses么\n<a:emoji_13:807058166965731328>么+avatar么\n<a:emoji_13:807058166965731328>么+istatistik么`)
   message.channel.send(OTTOMANcode)
 }
 exports.conf = {
