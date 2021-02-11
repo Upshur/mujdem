@@ -3,8 +3,9 @@ const Discord = require('discord.js');
 exports.run = (client, message) => {
   
   const OTTOMANcode = new Discord.RichEmbed()
+  .setImage('
   .setColor('#FFFF00')
-  .setDescription(`-çal\n-devam\n-durdur\n-geç\n-duraklat\n-sıra\n-ses`)
+  .setDescription(`+çal\n+devam\n+durdur\n+geç\n+duraklat\n+sıra\n+ses\n+avatar\n+istatistik`)
   message.channel.send(OTTOMANcode)
 }
 exports.conf = {
